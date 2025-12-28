@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Políticas de Privacidad — Centenarios del Norte</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles_dise_priv.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/farmacia.css">
+</head>
+
+<body>
+
+    <!-- CANVAS PARTÍCULAS -->
+    <canvas id="particles-bg" aria-hidden="true"></canvas>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html">
+            <div class="logo">CLINICA<br><span class="color-sec">CENTENARIO DEL NORTE</span></div>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="#">Campañas ▾</a>
+                    <ul class="submenu">
+                        <li><a href="campañas.html">Nuestras Campañas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Servicios ▾</a>
+                    <ul class="submenu">
+                        <li><a href="Servicios.html">Nuestros Servicios</a></li>
+                        <li><a href="agendar_cita.html">Agenda tu Cita</a></li>
+                        <li><a href="farmacia.html">Farmacia</a></li>
+                        <li><a href="Laboratorio.html">Laboratorio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Especialidades ▾</a>
+                    <ul class="submenu">
+                        <li><a href="especialidades.html">Nuestras Especialidades</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Staff Médico ▾</a>
+                    <ul class="submenu">
+                        <li><a href="staff_medico.html">Nuestros Médicos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nuestro Blog ▾</a>
+                    <ul class="submenu">
+                        <li><a href="Blog.html">Pagina Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FAQ's ▾</a>
+                    <ul class="submenu">
+                        <li><a href="faq.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="user-profile-container">
+                    <div class="user-icon" id="userIcon">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="user-popup" id="userPopup">
+                        <div class="popup-header">
+                            <div class="popup-user-info">
+                                <p class="user-name">Juan Pérez</p>
+                                <p class="user-email">juan.perez@example.com</p>
+                            </div>
+                        </div>
+                        <ul class="popup-menu">
+                            <li><a href="#"><i class="fa-regular fa-calendar-check"></i> Mis Citas</a></li>
+                            <li><a href="#" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Cerrar
+                                    Sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero reveal" aria-labelledby="titulo-privacidad">
+            <div class="hero-content-wrapper">
+
+                <p class="breadcrumb">
+                    <span>Políticas de Privacidad</span>
+                </p>
+
+                <div class="hero-grid">
+
+                    <div class="hero-text">
+                        <h2 id="titulo-privacidad">Políticas de Privacidad</h2>
+                        <p class="lead">
+                            En <strong>Centenarios del Norte</strong> protegemos tu información
+                            con responsabilidad, transparencia y los más altos estándares de seguridad.
+                        </p>
+                    </div>
+
+                    <div class="hero-image">
+                    <img 
+                    src="img/doctor_priv.jpg" 
+                    alt="Seguridad y protección de datos médicos"
+                     class="hero-img-card"
+    >
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENIDO -->
+        <section class="content reveal" id="politicas">
+            <h3>
+                Políticas de Privacidad de
+                <span class="accent">Centenarios del Norte</span>
+            </h3>
+
+            <p>
+                Nos preocupamos por tu seguridad y privacidad. Esta política describe
+                cómo recopilamos, utilizamos, almacenamos y protegemos tus datos personales,
+                cumpliendo estrictamente la normativa vigente en el Perú.
+            </p>
+
+            <h4>1. Responsable del Tratamiento</h4>
+            <p>
+                Centenarios del Norte, con domicilio en Lima, Perú, es responsable del
+                tratamiento de los datos personales proporcionados por sus usuarios,
+                garantizando confidencialidad, integridad y uso legítimo.
+            </p>
+
+            <h4>2. Finalidad del Tratamiento</h4>
+            <p>
+                Los datos personales se utilizan para la prestación de servicios médicos,
+                gestión de citas, administración de historias clínicas, facturación,
+                contacto institucional y mejora continua de la calidad asistencial.
+            </p>
+
+            <h4>3. Derechos del Titular</h4>
+            <p>
+                El titular de los datos puede ejercer sus derechos de acceso, rectificación,
+                cancelación, oposición, portabilidad y limitación del tratamiento conforme
+                a la Ley de Protección de Datos Personales.
+            </p>
+
+            <footer class="content-footer">
+                <p>© Centenarios del Norte</p>
+            </footer>
+        </section>
+
+        <!-- ACORDEÓN -->
+        <section class="accordion-section reveal" aria-label="Información adicional sobre privacidad">
+
+            <div class="accordion-item">
+                <button class="accordion-btn" aria-expanded="false">
+                    <span>Objetivo</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Informar de manera clara y transparente cómo Centenarios del Norte
+                        recopila, trata y protege los datos personales de pacientes,
+                        usuarios y colaboradores, garantizando el respeto de sus derechos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" aria-expanded="false">
+                    <span>Alcance y plazo de conservación</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Esta política aplica a todos los datos personales tratados por la
+                        institución. Los datos serán conservados solo durante el tiempo
+                        necesario para cumplir con obligaciones legales, contractuales y
+                        asistenciales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" aria-expanded="false">
+                    <span>Marco normativo y principios rectores</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        El tratamiento de datos se rige por la Ley N.º 29733 – Ley de
+                        Protección de Datos Personales y su reglamento, aplicando principios
+                        de legalidad, consentimiento, finalidad, proporcionalidad y seguridad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" aria-expanded="false">
+                    <span>Definición de Datos Personales</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Dato personal es toda información que identifica o hace identificable
+                        a una persona natural, como nombres, documentos, dirección, correo,
+                        teléfono o datos de salud.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer"> <!--PIE DE PAGINA DE LA WEB-->
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-links" id="footer-nosotros">
+                <h4>Nosotros ▾</h4>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="Qsomos.html">Quienes somos</a></li>
+                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="Contacto.html">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-links" id="footer-blog">
+                <h4>Nuestro Blog ▾</h4>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="Blog.html">Noticias</a></li>
+                        <li><a href="Blog.html">Consejos</a></li>
+                        <li><a href="Blog.html">Autoexaminate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-links" id="footer-legal">
+                <h4>Información Legal ▾</h4>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="privacidad.html">Politicas de privacidad</a></li>
+                        <li><a href="TerCondiciones.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-links" id="footer-redes">
+                <h4>Siguenos ▾</h4>
+                <div class="footer-content">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1Bo4gejadn/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/clinicacentenariodelnorte?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@centenario_delnorte?_r=1&_t=ZS-91kjkdxP0vo"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JS -->
+    <script src="js/script_privacidad.js"></script>
+
+</body>
+</html>
+
+

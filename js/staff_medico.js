@@ -35,8 +35,7 @@ $(document).ready(function () {
         $doctorsGrid.empty();
 
         const filteredDoctors = doctors.filter(doctor =>
-            doctor.specialty.toLowerCase().includes(filterText.toLowerCase()) ||
-            doctor.name.toLowerCase().includes(filterText.toLowerCase())
+            doctor.specialty.toLowerCase().includes(filterText.toLowerCase())
         );
 
         if (filteredDoctors.length === 0) {
@@ -70,12 +69,11 @@ $(document).ready(function () {
         $doctorsGrid.empty();
 
         const filteredDoctors = doctors.filter(doctor =>
-            doctor.specialty.toLowerCase().includes(filterText.toLowerCase()) ||
-            doctor.name.toLowerCase().includes(filterText.toLowerCase())
+            doctor.specialty.toLowerCase().includes(filterText.toLowerCase())
         );
 
         if (filteredDoctors.length === 0) {
-            $doctorsGrid.append('<p>No se encontraron médicos con esa especialidad o nombre.</p>');
+            $doctorsGrid.append('<p>No se encontraron médicos con esa especialidad</p>');
             return;
         }
 

@@ -10,23 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { key: "neumologia", nombre: "Neumología", icon: "fa-lungs", descripcion: "Tratamiento de enfermedades respiratorias.", items: ["Evaluación pulmonar", "Tratamiento asma y bronquitis", "Seguimiento clínico"] }
     ];
 
-    if (typeof particlesJS !== 'undefined' && document.getElementById('particles-js')) {
-        particlesJS('particles-js', {
-            "particles": {
-                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#16a34a" },
-                "opacity": { "value": 0.5 },
-                "size": { "value": 3 },
-                "line_linked": { "enable": true, "distance": 150, "color": "#0f3f7e", "opacity": 0.4, "width": 1 },
-                "move": { "enable": true, "speed": 2 }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } }
-            }
-        });
-    }
-
     const themeToggle = document.getElementById("themeToggle"); 
     const body = document.body;
 

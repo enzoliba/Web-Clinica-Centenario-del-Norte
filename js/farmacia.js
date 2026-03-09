@@ -41,7 +41,7 @@ $(document).ready(function () {
             category: "Protección",
             price: 3.50,
             image: "img/mascarilla.jpg"
-        },
+        },  
         {
             id: 7,
             name: "Jarabe para la Tos",
@@ -76,8 +76,7 @@ $(document).ready(function () {
 
         const filteredProducts = products.filter(product => {
             const searchText = filterText.toLowerCase();
-            return product.name.toLowerCase().includes(searchText) ||
-                product.category.toLowerCase().includes(searchText);
+            return product.name.toLowerCase().includes(searchText)
         });
 
         filteredProducts.forEach(product => {

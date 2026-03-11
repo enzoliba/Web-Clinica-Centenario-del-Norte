@@ -489,7 +489,6 @@ a:hover {
     margin-bottom: 15px;
 }
 
-
 /*======================*/
 /*========FOOTER========*/
 /*======================*/
@@ -552,6 +551,9 @@ a:hover {
 
 @media (max-width: 767px) {
 
+    .footer{
+        padding: 0 0 20px;
+    }
     .footer-links {
         width: 100%;
         text-align: left;
@@ -578,6 +580,7 @@ a:hover {
         padding-top: 10px;
     }
 }
+
 
 /* estilos para el dark mode */
 .dark-mode-toggle {
@@ -766,39 +769,5 @@ body.dark-mode .close-modal {
     .btn-submit {
         width: 100%;
         max-width: 100%;
-    }
-
-    .footer-links {
-        width: 100%;
-        text-align: left;
-        border: 1px solid black;
-    }
-
-    .footer-links h4 {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        padding: 15px 0;
-        font-weight: 600;
-        border-bottom: none;
-    }
-
-    .footer-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-        padding-bottom: 0;
-    }
-
-    .footer-links.active .footer-content {
-        max-height: 300px;
-        padding-bottom: 15px;
-    }
-
-    .footer-links .social-links {
-        justify-content: flex-start;
-        padding-top: 10px;
     }
 }

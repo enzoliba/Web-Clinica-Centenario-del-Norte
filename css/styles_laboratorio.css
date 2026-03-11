@@ -274,7 +274,6 @@ body {
 /*------- CONTENIDO PRINCIPAL Y BUSQUEDA -------*/
 main { margin: 40px;}
 .contenido-laboratorio { 
-    margin-bottom: 30px;
     padding: 0 20px;
     top: 100px;
     z-index: 50;
@@ -346,11 +345,10 @@ main { margin: 40px;}
     margin-left: 20px;
 }
 
-/*------- CARRUSEL HORIZONTAL Y TARJETAS -------*/
+/*------- HORIZONTAL Y TARJETAS -------*/
 .carrusel { 
     position: relative;
     padding: 0 40px;
-    margin-bottom: 30px; 
 }
 .carrusel h3{ margin: 0 0 40px 0; }
 .lista-analisis { 
@@ -375,7 +373,6 @@ main { margin: 40px;}
 .cuadro img { 
     display: block; 
     width: 230px;
-    height: 250px;
     object-fit: contain;
     margin: 10px 0; 
 }
@@ -598,7 +595,6 @@ main { margin: 40px;}
 .promocion {
     background-color: #e5f6ff;
     padding: 50px 20px;
-    margin-top: 40px;
     display: flex;
     justify-content: center; 
     gap: 10%;
@@ -677,11 +673,6 @@ main { margin: 40px;}
         justify-content: center;
         flex-wrap: wrap;
         padding: 10px 15px;
-    }
-    .cuadro img { 
-        width: 80px; 
-        height: 80px;
-        margin-right: 15px;
     }
     .cuadro .titulo { 
         font-size: 1.1em;

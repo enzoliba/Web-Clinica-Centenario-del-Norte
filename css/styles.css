@@ -371,15 +371,26 @@
 
     .slider-box{
         width: 100%;
+        height: 300px;
+    }
+
+    .slider-box li{
+        height: 100%;
+    }
+
+    .slider-box img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
     .texto{
-        top: 150px;
+        top: 50px;
         padding: 0;
     }
 
     .texto h2{
-        font-size: 1.8em;    
+        font-size: 1.6em;    
         margin-bottom: 15px;
         margin-left: 20px;
     }
@@ -389,13 +400,16 @@
         margin-left: 20px;
     }
 
-    button{
-        padding: 15px;
+    .texto button{
+        padding: 18px;
         margin-left: 20px;
     }
 
-    button a{
-        font-size: .7em;
+    .texto button a{
+        font-size: .6em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -675,6 +689,9 @@
 
 @media (max-width: 767px) {
 
+    .footer{
+        padding: 0 0 20px;
+    }
     .footer-links {
         width: 100%;
         text-align: left;

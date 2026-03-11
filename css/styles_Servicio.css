@@ -21,12 +21,19 @@ a{
     display: contents;
 }
 
-.servicios-info h2,
-.servicios-info p {
+.servicios-info h2{
     grid-column: 1 / span 2;
     text-align: center;
     margin: 0;
 }
+
+.servicios-info p {
+    grid-column: 1 / span 2;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0;
+}
+
 
 .servicios-info h2 {
     font-size: 2.8em;
@@ -106,6 +113,33 @@ a{
     font-weight: 700;
     font-size: 0.85em;
     margin-top: auto;
+}
+
+@media(max-width:768px){
+
+    .servicio-cuadro{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .servicio-cuadro img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .servicio-texto h4{
+        font-size: 1.3em;
+    }
+
+    .servicio-texto p{
+        font-size: 1.2em;
+    }
+
+    .servicio-texto .link-verde{
+        font-size: 1.1em;
+    }
 }
 
 .modal-overlay {

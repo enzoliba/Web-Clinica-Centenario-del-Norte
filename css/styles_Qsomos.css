@@ -15,16 +15,6 @@
     --shadow: 0 20px 45px rgba(0,0,0,.08);
 }
 
-/* 🌙 MODO OSCURO */
-body.theme-dark {
-    --bg: #0b1220;
-    --bg-soft: #0f172a;
-    --texto: #e5e7eb;
-    --card: rgba(15,23,42,.9);
-    --border: #1f2937;
-    --shadow: 0 25px 60px rgba(0,0,0,.45);
-}
-
 /* 
    RESET GLOBAL
  */
@@ -49,11 +39,11 @@ body {
 
 .header{
     display: flex;
-    justify-content: space-between; /* Espacio entre logo/nav y acciones */
+    justify-content: space-between; 
     align-items: center;
     padding: 15px 30px;
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Sombra elegante */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;  
@@ -231,6 +221,7 @@ body {
         transition: transform 0.35s ease;
         opacity: 0;
         pointer-events: none;
+        gap: 0;
     }
 
     .main-nav.open {
@@ -301,9 +292,7 @@ body {
     }
 }
 
-/* 
-   BANNER
-*/
+/* BANNER */
 .banner {
     position: relative;
     height: 280px;
@@ -370,6 +359,12 @@ body {
 .img-hover-3dw {
     box-shadow: 0 35px 70px rgba(0,0,0,.25);
 }
+@media (max-width:768px) {
+    .quienes-section{
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+    }
+}
 
 /* 
    MISION - VISION
@@ -393,6 +388,14 @@ body {
 .mv-card h3 {
     color: var(--azul);
     margin-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .mv-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
 }
 
 /*
@@ -425,6 +428,13 @@ body {
     font-size: 17px;
 }
 
+@media (max-width: 768px) {
+    .valores-section {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+}
+
 /* 
    BOTÓN TEMA
  */
@@ -455,7 +465,7 @@ body {
 
 .footer{
     background-color: #fff;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .footer-row{
@@ -536,16 +546,7 @@ body {
 /* 
    RESPONSIVE
 */
-@media (max-width: 900px) {
-    .quienes-section,
-    .valores-section {
-        grid-template-columns: 1fr;
-    }
-
-    .mv-section {
-        flex-direction: column;
-    }
-
+@media (max-width: 768px) {
     .banner-title {
         font-size: 32px;
     }

@@ -487,79 +487,6 @@ a {
         box-sizing: border-box;
     }
 
-    .header {
-        padding: 15px 20px;
-    }
-
-    .menu-toggle {
-        display: block;
-        order: 2;
-    }
-
-    .main-nav {
-        position: absolute;
-        top: 65px;
-        left: 0;
-        width: 100%;
-        height: auto;
-        background-color: white;
-        flex-direction: column;
-        transform: translateY(-100vh);
-        transition: transform 0.4s ease-in-out;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .main-nav.open {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        padding: 10px 0;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
-    .nav-links>li {
-        width: 100%;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
-    .nav-links a {
-        padding: 15px 20px;
-        text-align: left;
-    }
-
-    .submenu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        padding-left: 30px;
-        border-radius: 0;
-        min-width: auto;
-        background-color: #f7f9fc;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-    }
-
-    .nav-actions {
-        flex-direction: column;
-        width: 100%;
-        padding: 15px 20px;
-    }
-
-    .nav-actions .btn {
-        width: 100%;
-        margin-bottom: 10px;
-        justify-content: center;
-    }
-
     /* Ajuste del contenedor principal de Grid a una sola columna */
     .tarjetas {
         grid-template-columns: 1fr;
@@ -611,15 +538,15 @@ a {
     }
 
     .mini-tarjeta {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         text-align: left;
     }
 
     .img-mini {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 0;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
         margin-right: 15px;
     }
 
@@ -739,21 +666,6 @@ a {
     --blog-p-color: #555;
 }
 
-/* Variables para Modo Oscuro */
-body.dark-mode {
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
-    --text-main: #e0e0e0;
-    --text-sub: #b0b0b0;
-    --header-bg: #181818;
-    --border-color: #333;
-    --footer-bg: #181818;
-    --nav-link: #ffffff;
-    --article-title-color: #909eaf;
-    --card-desc-color: #d1d1d1;
-    --blog-p-color: #ececec;
-}
-
 /* Aplicación de variables a los elementos existentes */
 body {
     background-color: var(--bg-color);
@@ -792,12 +704,6 @@ body {
     color: var(--card-desc-color) !important;
 }
 
-/* Negritas dentro de los cuadros para que no se pierdan */
-body.dark-mode b,
-body.dark-mode strong {
-    color: #ffffff;
-}
-
 .nav-links a,
 .footer-links h4,
 .footer-links ul li a {
@@ -808,40 +714,4 @@ body.dark-mode strong {
 .sidebar-intro,
 .card-description {
     color: var(--text-sub) !important;
-}
-
-/* Ajuste para el menú hamburguesa en móvil */
-body.dark-mode .menu-toggle .bar {
-    background-color: #ffffff;
-}
-
-body.dark-mode .main-nav {
-    background-color: var(--header-bg);
-}
-
-/* Ajuste de sombras para que no se vean blancas en modo oscuro */
-body.dark-mode .contenido-tarjetas,
-body.dark-mode .mini-tarjeta {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-/* --- Boton de Modo Oscuro Flotante --- */
-.dark-mode-switch {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #1c4a9f;
-    color: white;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    z-index: 2000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    transition: transform 0.3s, background-color 0.3s;
 }

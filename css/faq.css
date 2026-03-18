@@ -539,6 +539,10 @@ body {
 
 @media (max-width: 767px) {
 
+    .footer{
+        padding: 0;
+    }
+
     .footer-links {
         width: 100%;
         text-align: left;

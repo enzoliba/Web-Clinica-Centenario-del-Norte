@@ -391,7 +391,11 @@ body {
     transition: all .5s ease;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+
+    .footer{
+        padding: 0;
+    }
 
     .footer-links {
         width: 100%;

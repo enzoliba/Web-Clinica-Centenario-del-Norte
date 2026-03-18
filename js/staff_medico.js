@@ -127,29 +127,6 @@ $(document).ready(function () {
     $searchInput.on('input', function () {
         renderDoctors($(this).val());
     });
-
-    // Dark Mode Logic
-    const $darkModeToggle = $('#darkModeToggle');
-    const $body = $('body');
-    const $icon = $darkModeToggle.find('i');
-
-    // Check for saved preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        $body.addClass('dark-mode');
-        $icon.removeClass('fa-moon').addClass('fa-sun');
-    }
-
-    $darkModeToggle.on('click', function () {
-        $body.toggleClass('dark-mode');
-
-        if ($body.hasClass('dark-mode')) {
-            localStorage.setItem('darkMode', 'enabled');
-            $icon.removeClass('fa-moon').addClass('fa-sun');
-        } else {
-            localStorage.setItem('darkMode', 'disabled');
-            $icon.removeClass('fa-sun').addClass('fa-moon');
-        }
-    });
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -190,33 +167,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     }
                 }
             }
-        });
-    }
-});
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    if (window.innerWidth <= 767) {
-        const footerHeaders = document.querySelectorAll('.footer-links h4');
-
-        footerHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const parent = header.closest('.footer-links');
-                const content = parent.querySelector('.footer-content');
-
-                if (parent.classList.contains('active')) {
-                    content.style.maxHeight = 0;
-                    parent.classList.remove('active');
-                } else {
-                    document.querySelectorAll('.footer-links.active').forEach(item => {
-                        item.classList.remove('active');
-                        item.querySelector('.footer-content').style.maxHeight = 0;
-                    });
-
-                    parent.classList.add('active');
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
         });
     }
 });

@@ -69,11 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.addEventListener("click", (e) => {
             if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
                 navLinks.classList.remove("active");
-                 
-                 const bars = menuToggle.querySelectorAll(".bar");
-                 bars[0].style.transform = "none";
-                 bars[1].style.opacity = "1";
-                 bars[2].style.transform = "none";
+                const bars = menuToggle.querySelectorAll(".bar");
+                bars[0].style.transform = "none";
+                bars[1].style.opacity = "1";
+                bars[2].style.transform = "none";
             }
         });
     }

@@ -103,32 +103,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 });
-/*Modo oscuro*/
-document.addEventListener('DOMContentLoaded', () => {
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-    const icon = darkModeToggle.querySelector('i');
-
-    // Función para actualizar el icono
-    const updateIcon = (isDark) => {
-        if (isDark) {
-            icon.classList.replace('fa-moon', 'fa-sun');
-        } else {
-            icon.classList.replace('fa-sun', 'fa-moon');
-        }
-    };
-
-    // Cargar preferencia guardada (usando 'darkMode' y 'enabled'/'disabled' como en farmacia.js)
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        updateIcon(true);
-    }
-
-    darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        const isDark = body.classList.contains('dark-mode');
-
-        updateIcon(isDark);
-        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-    });
-});
